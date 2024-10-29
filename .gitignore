@@ -1,0 +1,56 @@
+# Node.js dependencies
+node_modules/
+yarn.lock
+npm-debug.log*
+
+# Output directories
+dist/
+build/
+.cache/
+
+# Logs
+logs
+*.log
+*.log.*
+
+# Serverless files
+.serverless/
+.sls/
+
+# AWS credentials
+.aws-sam/
+.sam/
+.slsignore
+.aws/
+
+# TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+
+# MacOS
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Jest coverage and test outputs
+coverage/
+*.lcov
+
+# Swagger generated files
+*.yaml
+*.json
+
+# CDK-specific files (if any)
+cdk.out/
+
+# Generated files (Swagger UI)
+public/swagger-ui/
+swagger-ui/
+swagger.json

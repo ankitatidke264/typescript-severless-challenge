@@ -1,0 +1,25 @@
+service: hello-service
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+  stage: dev
+  region: us-east-1
+
+functions:
+  hello:
+    handler: ../lambda-function/dist/handler.hello
+    events:
+      - http:
+          path: hello
+          method: get
+
+swagger:
+  handler: ../lambda-function/dist/handler.swagger
+  events:
+    - http:
+        path: swagger.json
+        method: get
+
+plugins:
+  - serverless-offline
